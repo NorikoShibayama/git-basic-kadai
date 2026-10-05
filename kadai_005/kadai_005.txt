@@ -1,0 +1,58 @@
+shiba@nori MINGW64 ~/Desktop/【侍】実践samurai/TEST/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/shiba/Desktop/【侍】実践samurai/TEST/git_challenge/.git/
+
+shiba@nori MINGW64 ~/Desktop/【侍】実践samurai/TEST/git_challenge (main)
+$ git config --global user.name "NorikoShibayama"
+
+shiba@nori MINGW64 ~/Desktop/【侍】実践samurai/TEST/git_challenge (main)
+$ git config --global user.email "norixhalu@gmail.com"
+
+shiba@nori MINGW64 ~/Desktop/【侍】実践samurai/TEST/git_challenge (main)
+$ git add .
+warning: in the working copy of 'hello_world.txt', CRLF will be replaced by LF the next time Git touches it
+
+shiba@nori MINGW64 ~/Desktop/【侍】実践samurai/TEST/git_challenge (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.txt
+
+
+shiba@nori MINGW64 ~/Desktop/【侍】実践samurai/TEST/git_challenge (main)
+$ git commit -m "commit 1"
+[main (root-commit) 3fe96d0] commit 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+shiba@nori MINGW64 ~/Desktop/【侍】実践samurai/TEST/git_challenge (main)
+$ git add .
+warning: in the working copy of 'hello_world.txt', CRLF will be replaced by LF the next time Git touches it
+
+shiba@nori MINGW64 ~/Desktop/【侍】実践samurai/TEST/git_challenge (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello_world.txt
+
+
+shiba@nori MINGW64 ~/Desktop/【侍】実践samurai/TEST/git_challenge (main)
+$ git add hello_world.txt
+
+shiba@nori MINGW64 ~/Desktop/【侍】実践samurai/TEST/git_challenge (main)
+$ git commit -m "日本語訳を追記"
+[main 35af452] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+
+shiba@nori MINGW64 ~/Desktop/【侍】実践samurai/TEST/git_challenge (main)
+$ git log --oneline
+35af452 (HEAD -> main) 日本語訳を追記
+3fe96d0 commit 1
+
+shiba@nori MINGW64 ~/Desktop/【侍】実践samurai/TEST/git_challenge (main)
+$ 
